@@ -29,7 +29,7 @@ def Button(msg, x, y, w, h, ic, ac, action=None):
         pygame.draw.rect(world, ac, (x,y,w,h)) #Change color
         if click[0] == 1 and action != None:
             if action == "play":
-                
+
 
                 #CharacterSelect()
             #elif action == "quit":

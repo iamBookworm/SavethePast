@@ -1,4 +1,6 @@
-
+body {
+    background-color: black;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -41,4 +43,11 @@ p {
 a {
   font-size: 25px;
   color: #4CAF50;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
