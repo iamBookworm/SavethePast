@@ -45,6 +45,7 @@ def game_intro():
               if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
+        message_display('Save the Past')
         Button("play")
         pygame.display.flip()
         clock.tick(15)
@@ -62,7 +63,11 @@ def Button(action=None):
         image = pygame.image.load('tree.png').convert()
         world.blit(image,[0,0])
         pygame.display.flip()
-
+def message_display(text):
+    largeText = pygame.font.Font('freesansbold.ttf',30)
+    TextSurf, TextRect = text_objects(text, largeText)
+    TextRect.center = ((325),(200))
+    world.blit(TextSurf, TextRect)
 def game_running():
     running = True
 
