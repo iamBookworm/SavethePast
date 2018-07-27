@@ -51,11 +51,6 @@ def Button(msg, x, y, w, h, ic, ac, action=None):
             #if action == "play":
                 #world.fill(white)
 
-
-                #CharacterSelect()
-            #elif action == "quit":
-                #pygame.quit()
-                #quit()
     else:
         pygame.draw.rect(world, ic, (x,y,w,h))
 
@@ -77,24 +72,13 @@ def game_running():
         mouse = pygame.mouse.get_pos()
         click = pygame.mouse.get_pressed()
 
-        #world.fill(blue)
-#def CharacterSelect():
-    #world = pygame.display.set_mode([worldx,worldy])
-    #image = pygame.image.load('pixil-frame-1.png').convert()
-    #current_path = os.path.dirname('Final_Project')
-
-    #background_image = pygame.image.load(os.path.join(current_path, 'pixil-frame-1.png'))
-    #pygame.display.flip()
-
-
-
 
 world = pygame.display.set_mode([worldx,worldy])
 pygame.display.set_caption("Pollution")
 largeText = pygame.font.Font('freesansbold.ttf',115)
 smallText = pygame.font.Font("freesansbold.ttf",20)
 image = pygame.image.load('openingscreen.png').convert()
-current_path = os.path.dirname('Final_Project')
+current_path = os.path.dirname('SavethePast')
 background_image = pygame.image.load(os.path.join(current_path, 'openingscreen.png'))
 
 world.blit(image,[0,0])
