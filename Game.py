@@ -41,6 +41,7 @@ def game_intro():
         ButtonStart("play")
         pygame.display.flip()
         clock.tick(15)
+        ButtonSelection()
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
@@ -63,6 +64,20 @@ def ButtonStart(action=None):
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
         v.rect.topleft = [500,400]
+        world.blit(v.image, v.rect)
+def ButtonSelection():
+    keys=pygame.key.get_pressed()
+    if keys [pygame.K_v]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('Prebath.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        v = pygame.sprite.Sprite()
+        v.image = pygame.image.load("vanessathechar.png").convert_alpha()
+        v.rect = v.image.get_rect()
+        v.rect.topleft = [300,450]
         world.blit(v.image, v.rect)
 def message_display(text):
     largeText = pygame.font.Font('freesansbold.ttf',30)
