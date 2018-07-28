@@ -38,13 +38,13 @@ def game_intro():
               if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
-        Button( "play")
+        ButtonStart("play")
         pygame.display.flip()
         clock.tick(15)
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
-def Button(action=None):
+def ButtonStart(action=None):
     keys=pygame.key.get_pressed()
     if keys[pygame.K_SPACE] and action != None:
         pygame.display.update()
