@@ -97,6 +97,7 @@ def ButtonSelection():
         pygame.display.flip()
 def Water():
     keys=pygame.key.get_pressed()
+    #How to make paths for different sprites. A path for Vanessa and one for Dave
     if keys [pygame.K_w] or keys [pygame.K_r]:
         pygame.display.update()
         pygame.time.wait(10)
