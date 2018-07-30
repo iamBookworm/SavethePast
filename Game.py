@@ -188,7 +188,9 @@ def Lights():
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
         print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
-        print("")
+        print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
+        print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
+        print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
     if keys [pygame.K_c]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -202,7 +204,10 @@ def Lights():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-
+            print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
+            print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
+            print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
+            print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
 # def message_display(text):
 #     largeText = pygame.font.Font('freesansbold.ttf',30)
 #     TextSurf, TextRect = text_objects(text, largeText)
