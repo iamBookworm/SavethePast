@@ -188,6 +188,7 @@ def Lights():
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
         print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
+        print("")
     if keys [pygame.K_c]:
         pygame.display.update()
         pygame.time.wait(10)
