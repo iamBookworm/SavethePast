@@ -220,6 +220,9 @@ def Recycle():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
+        print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
+        print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
+        print("The total generation of municipal solid waste in 2014 was 258.5 million tons,  approximately 3.5 million tons more than the amount generated in 2013.")
     if keys [pygame.K_j]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -233,6 +236,9 @@ def Recycle():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
+        print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
+        print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
+        print("The total generation of municipal solid waste in 2014 was 258.5 million tons,  approximately 3.5 million tons more than the amount generated in 2013.")
 def Compost():
     keys=pygame.key.get_pressed()
     if keys [pygame.K_q]:
@@ -247,6 +253,9 @@ def Compost():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
+        print("Each year the average American throws away approximately 1,200 lbs of organic waste which includes grass, leaves, tree trimming and food waste that can be composted.")
+        print("70% of the worlds waste can be composted.")
+        print("On average it costs $35 per ton to compost waste, $50 per ton to landfill it and up to $75 per ton to incinerate it.")
     if keys [pygame.K_p]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -260,6 +269,9 @@ def Compost():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
+        print("Each year the average American throws away approximately 1,200 lbs of organic waste which includes grass, leaves, tree trimming and food waste that can be composted.")
+        print("70% of the worlds waste can be composted.")
+        print("On average it costs $35 per ton to compost waste, $50 per ton to landfill it and up to $75 per ton to incinerate it.")
 # def message_display(text):
 #     largeText = pygame.font.Font('freesansbold.ttf',30)
 #     TextSurf, TextRect = text_objects(text, largeText)
