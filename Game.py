@@ -93,7 +93,7 @@ def ButtonSelection():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 400] # put the ball in the top left corner
+        d.rect.topleft = [300,450] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
 def Water():
@@ -171,6 +171,7 @@ def Outside():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
+
 def Lights():
     if keys [pygame.K_l]:
         pygame.display.update()
@@ -197,11 +198,13 @@ def Lights():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
+
 # def message_display(text):
 #     largeText = pygame.font.Font('freesansbold.ttf',30)
 #     TextSurf, TextRect = text_objects(text, largeText)
 #     TextRect.center = ((325),(200))
 #     world.blit(TextSurf, TextRect)
+
 def game_running():
     running = True
 
