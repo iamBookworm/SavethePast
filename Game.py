@@ -139,6 +139,19 @@ def Outside():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
+    if keys [pygame.K_b]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('trash.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        d = pygame.sprite.Sprite() # create sprite
+        d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
+        d.rect = d.image.get_rect() # use image extent values
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        world.blit(d.image, d.rect)
+        pygame.display.flip()
 def message_display(text):
     largeText = pygame.font.Font('freesansbold.ttf',30)
     TextSurf, TextRect = text_objects(text, largeText)
