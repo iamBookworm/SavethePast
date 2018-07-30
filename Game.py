@@ -45,6 +45,7 @@ def game_intro():
         pygame.display.flip()
         clock.tick(15)
         Water()
+        Outside()
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
@@ -109,6 +110,20 @@ def Water():
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,450]
+        world.blit(v.image, v.rect)
+def Outside():
+    keys=pygame.key.get_pressed()
+    if keys [pygame.K_o]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('trash.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        v = pygame.sprite.Sprite()
+        v.image = pygame.image.load("vanessathechar.png").convert_alpha()
+        v.rect = v.image.get_rect()
+        v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
 def message_display(text):
     largeText = pygame.font.Font('freesansbold.ttf',30)
