@@ -235,7 +235,7 @@ def Recycle():
         pygame.display.flip()
 def Compost():
     keys=pygame.key.get_pressed()
-    if keys [pygame.K_c]:
+    if keys [pygame.K_q]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
