@@ -46,6 +46,7 @@ def game_intro():
         clock.tick(15)
         Water()
         Outside()
+        Lights()
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
@@ -173,11 +174,12 @@ def Outside():
         pygame.display.flip()
 
 def Lights():
+    keys=pygame.key.get_pressed()
     if keys [pygame.K_l]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('trash.png').convert()
+        image = pygame.image.load('led.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         v = pygame.sprite.Sprite()
@@ -185,11 +187,12 @@ def Lights():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
+        print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
     if keys [pygame.K_c]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('trash.png').convert()
+        image = pygame.image.load('led.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         d = pygame.sprite.Sprite() # create sprite
