@@ -48,6 +48,7 @@ def game_intro():
         Outside()
         Lights()
         Recycle()
+        Compost()
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
@@ -117,18 +118,17 @@ def Water():
         print("About 95 percent of the water entering our homes goes down the drain.")
         print("Running the tap while brushing your teeth can waste 4 gallons of water.")
         print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
-def Outside():
-    elif keys [pygame.K_r]:
+    if keys [pygame.K_w]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
         image = pygame.image.load('Postbath.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
-        d = pygame.sprite.Sprite() # create sprite
+        d = pygame.sprite.Sprite()
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 400] # put the ball in the top left corner
+        d.rect.topleft = [300, 450] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         print("Americans now use 127 percent more water than we did in 1950.")
@@ -149,6 +149,10 @@ def Outside():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
+        print("Americans now use 127 percent more water than we did in 1950.")
+        print("About 95 percent of the water entering our homes goes down the drain.")
+        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
     if keys [pygame.K_b]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -162,6 +166,10 @@ def Outside():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
+        print("Americans now use 127 percent more water than we did in 1950.")
+        print("About 95 percent of the water entering our homes goes down the drain.")
+        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
 
 def Lights():
     keys=pygame.key.get_pressed()
@@ -200,7 +208,7 @@ def Lights():
         print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
 def Recycle():
     keys=pygame.key.get_pressed()
-    if keys [pygame.K_]:
+    if keys [pygame.K_i]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
@@ -212,11 +220,38 @@ def Recycle():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
-    if keys [pygame.K_b]:
+    if keys [pygame.K_j]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
         image = pygame.image.load('recycle.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        d = pygame.sprite.Sprite() # create sprite
+        d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
+        d.rect = d.image.get_rect() # use image extent values
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        world.blit(d.image, d.rect)
+        pygame.display.flip()
+def Compost():
+    keys=pygame.key.get_pressed()
+    if keys [pygame.K_c]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('compost.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        v = pygame.sprite.Sprite()
+        v.image = pygame.image.load("vanessathechar.png").convert_alpha()
+        v.rect = v.image.get_rect()
+        v.rect.topleft = [300,275]
+        world.blit(v.image, v.rect)
+    if keys [pygame.K_p]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('compost.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         d = pygame.sprite.Sprite() # create sprite
