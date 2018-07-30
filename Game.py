@@ -34,7 +34,7 @@ def game_intro():
     running = True
     while running:
         for event in pygame.event.get():
-              print(event)
+              #print(event)
               if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
@@ -83,7 +83,7 @@ def ButtonSelection():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,450]
         world.blit(v.image, v.rect)
-    elif keys [pygame.K_d]:
+    if keys [pygame.K_d]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
@@ -111,6 +111,16 @@ def Water():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,450]
         world.blit(v.image, v.rect)
+        print("Americans now use 127 percent more water than we did in 1950.")
+        print("About 95 percent of the water entering our homes goes down the drain.")
+        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        print("Older toilets can use 3 gallons of clean water with every flush, while new toilets use as little as 1 gallon.")
+        print("Leaky faucets that drip at the rate of one drop per second can waste up to 2,700 gallons of water each year.")
+        print("A garden hose or sprinkler can use almost as much water in an hour as an average family of four uses in one day.")
+        print("A water-efficient dishwasher will use as little a 4 gallons per wash cycle, whereas some older models use up to 13 gallons per cycle.")
+        print("Some experts estimate that more than 50 percent of landscape water use goes to waste due to evaporation or runoff caused by over-watering.")
+        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
+        print("Over a quarter of all the clean, drinkable water you use in your home is used to flush the toilets.")
     elif keys [pygame.K_r]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -124,7 +134,16 @@ def Water():
         d.rect.topleft = [300, 400] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-
+        print("Americans now use 127 percent more water than we did in 1950.")
+        print("About 95 percent of the water entering our homes goes down the drain.")
+        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        print("Older toilets can use 3 gallons of clean water with every flush, while new toilets use as little as 1 gallon.")
+        print("Leaky faucets that drip at the rate of one drop per second can waste up to 2,700 gallons of water each year.")
+        print("A garden hose or sprinkler can use almost as much water in an hour as an average family of four uses in one day.")
+        print("A water-efficient dishwasher will use as little a 4 gallons per wash cycle, whereas some older models use up to 13 gallons per cycle.")
+        print("Some experts estimate that more than 50 percent of landscape water use goes to waste due to evaporation or runoff caused by over-watering.")
+        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
+        print("Over a quarter of all the clean, drinkable water you use in your home is used to flush the toilets.")
 def Outside():
     keys=pygame.key.get_pressed()
     if keys [pygame.K_o]:
@@ -162,19 +181,27 @@ def Outside():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
+<<<<<<< HEAD
 >>>>>>> 3e9e6f9407ba711ab530e5a06d5af831d730ead7
 def message_display(text):
     largeText = pygame.font.Font('freesansbold.ttf',30)
     TextSurf, TextRect = text_objects(text, largeText)
     TextRect.center = ((325),(200))
     world.blit(TextSurf, TextRect)
+=======
+# def message_display(text):
+#     largeText = pygame.font.Font('freesansbold.ttf',30)
+#     TextSurf, TextRect = text_objects(text, largeText)
+#     TextRect.center = ((325),(200))
+#     world.blit(TextSurf, TextRect)
+>>>>>>> 240320b6c499a5ee417489d67b035ca4e65e25cc
 def game_running():
     running = True
 
     while running:
 
         for event in pygame.event.get():
-            print(event)
+            #print(event)
             if event.type == pygame.QUIT:
                 pygame.quit()
                 quit()
