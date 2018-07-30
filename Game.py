@@ -47,6 +47,7 @@ def game_intro():
         Water()
         Outside()
         Lights()
+        Recycle()
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
@@ -115,13 +116,8 @@ def Water():
         print("Americans now use 127 percent more water than we did in 1950.")
         print("About 95 percent of the water entering our homes goes down the drain.")
         print("Running the tap while brushing your teeth can waste 4 gallons of water.")
-        print("Older toilets can use 3 gallons of clean water with every flush, while new toilets use as little as 1 gallon.")
-        print("Leaky faucets that drip at the rate of one drop per second can waste up to 2,700 gallons of water each year.")
-        print("A garden hose or sprinkler can use almost as much water in an hour as an average family of four uses in one day.")
-        print("A water-efficient dishwasher will use as little a 4 gallons per wash cycle, whereas some older models use up to 13 gallons per cycle.")
-        print("Some experts estimate that more than 50 percent of landscape water use goes to waste due to evaporation or runoff caused by over-watering.")
         print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
-        print("Over a quarter of all the clean, drinkable water you use in your home is used to flush the toilets.")
+def Outside():
     elif keys [pygame.K_r]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -138,13 +134,7 @@ def Water():
         print("Americans now use 127 percent more water than we did in 1950.")
         print("About 95 percent of the water entering our homes goes down the drain.")
         print("Running the tap while brushing your teeth can waste 4 gallons of water.")
-        print("Older toilets can use 3 gallons of clean water with every flush, while new toilets use as little as 1 gallon.")
-        print("Leaky faucets that drip at the rate of one drop per second can waste up to 2,700 gallons of water each year.")
-        print("A garden hose or sprinkler can use almost as much water in an hour as an average family of four uses in one day.")
-        print("A water-efficient dishwasher will use as little a 4 gallons per wash cycle, whereas some older models use up to 13 gallons per cycle.")
-        print("Some experts estimate that more than 50 percent of landscape water use goes to waste due to evaporation or runoff caused by over-watering.")
         print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
-        print("Over a quarter of all the clean, drinkable water you use in your home is used to flush the toilets.")
 def Outside():
     keys=pygame.key.get_pressed()
     if keys [pygame.K_o]:
@@ -204,10 +194,37 @@ def Lights():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-            print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
-            print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
-            print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
-            print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
+        print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
+        print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
+        print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
+        print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
+def Recycle():
+    keys=pygame.key.get_pressed()
+    if keys [pygame.K_]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('recycle.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        v = pygame.sprite.Sprite()
+        v.image = pygame.image.load("vanessathechar.png").convert_alpha()
+        v.rect = v.image.get_rect()
+        v.rect.topleft = [300,275]
+        world.blit(v.image, v.rect)
+    if keys [pygame.K_b]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('recycle.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        d = pygame.sprite.Sprite() # create sprite
+        d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
+        d.rect = d.image.get_rect() # use image extent values
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        world.blit(d.image, d.rect)
+        pygame.display.flip()
 # def message_display(text):
 #     largeText = pygame.font.Font('freesansbold.ttf',30)
 #     TextSurf, TextRect = text_objects(text, largeText)
