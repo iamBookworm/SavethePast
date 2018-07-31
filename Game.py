@@ -114,10 +114,10 @@ def Water():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,450]
         world.blit(v.image, v.rect)
-        print("Americans now use 127 percent more water than we did in 1950.")
-        print("About 95 percent of the water entering our homes goes down the drain.")
-        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
-        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
+    #     print("Americans now use 127 percent more water than we did in 1950.")
+    #     print("About 95 percent of the water entering our homes goes down the drain.")
+    #     print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+    #     print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
     if keys [pygame.K_r]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -131,10 +131,10 @@ def Water():
         d.rect.topleft = [300, 450] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-        print("Americans now use 127 percent more water than we did in 1950.")
-        print("About 95 percent of the water entering our homes goes down the drain.")
-        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
-        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
+        # print("Americans now use 127 percent more water than we did in 1950.")
+        # print("About 95 percent of the water entering our homes goes down the drain.")
+        # print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        # print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
 def Outside():
     keys=pygame.key.get_pressed()
     if keys [pygame.K_o]:
@@ -185,10 +185,10 @@ def Lights():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
-        print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
-        print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
-        print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
-        print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
+        # print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
+        # print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
+        # print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
+        # print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
     if keys [pygame.K_c]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -202,17 +202,17 @@ def Lights():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-        print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
-        print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
-        print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
-        print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
-def Recycle():
+        # print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
+        # print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
+        # print("CFLs can last up to 10 times longer than incandescent bulbs, saving on production and disposal costs.")
+        # print("CFLs use up to 75 percent less energy than traditional incandescent bulbs.")
+def Recycle():#Pic
     keys=pygame.key.get_pressed()
     if keys [pygame.K_i]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('recycle.png').convert()
+        image = pygame.image.load('compostvanessa.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         v = pygame.sprite.Sprite()
@@ -220,14 +220,14 @@ def Recycle():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
-        print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
-        print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
-        print("The total generation of municipal solid waste in 2014 was 258.5 million tons,  approximately 3.5 million tons more than the amount generated in 2013.")
+        # print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
+        # print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
+        # print("The total generation of municipal solid waste in 2014 was 258.5 million tons,  approximately 3.5 million tons more than the amount generated in 2013.")
     if keys [pygame.K_j]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('recycle.png').convert()
+        image = pygame.image.load('compostdave.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         d = pygame.sprite.Sprite() # create sprite
@@ -236,9 +236,9 @@ def Recycle():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-        print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
-        print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
-        print("The total generation of municipal solid waste in 2014 was 258.5 million tons,  approximately 3.5 million tons more than the amount generated in 2013.")
+#         print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
+#         print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
+#         print("The total generation of municipal solid waste in 2014 was 258.5 million tons,  approximately 3.5 million tons more than the amount generated in 2013.")
 def Compost():
     keys=pygame.key.get_pressed()
     if keys [pygame.K_q]:
