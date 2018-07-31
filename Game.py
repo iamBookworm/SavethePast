@@ -246,7 +246,7 @@ def Compost():
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('Compost.png').convert()
+        image = pygame.image.load('compost.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         v = pygame.sprite.Sprite()
@@ -261,7 +261,7 @@ def Compost():
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('Compost.png').convert()
+        image = pygame.image.load('compost.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         d = pygame.sprite.Sprite() # create sprite
