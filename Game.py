@@ -164,7 +164,7 @@ def Outside():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        d.rect.topleft = [300, 275] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         print("Americans now use 127 percent more water than we did in 1950.")
@@ -200,7 +200,7 @@ def Lights():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        d.rect.topleft = [300, 275] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         # print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
@@ -234,7 +234,7 @@ def Recycle():#Pic
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        d.rect.topleft = [300, 275] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
 #         print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
@@ -267,7 +267,7 @@ def Compost():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        d.rect.topleft = [300, 275] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         # print("Each year the average American throws away approximately 1,200 lbs of organic waste which includes grass, leaves, tree trimming and food waste that can be composted.")
