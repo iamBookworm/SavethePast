@@ -148,12 +148,12 @@ def Outside():
         v = pygame.sprite.Sprite()
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
-        v.rect.topleft = [300,275]
+        v.rect.topleft = [300,230]
         world.blit(v.image, v.rect)
-        print("Americans now use 127 percent more water than we did in 1950.")
-        print("About 95 percent of the water entering our homes goes down the drain.")
-        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
-        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
+        # print("Americans now use 127 percent more water than we did in 1950.")
+        # print("About 95 percent of the water entering our homes goes down the drain.")
+        # print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        # print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
     if keys [pygame.K_b]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -164,13 +164,13 @@ def Outside():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 275] # put the ball in the top left corner
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-        print("Americans now use 127 percent more water than we did in 1950.")
-        print("About 95 percent of the water entering our homes goes down the drain.")
-        print("Running the tap while brushing your teeth can waste 4 gallons of water.")
-        print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
+        # print("Americans now use 127 percent more water than we did in 1950.")
+        # print("About 95 percent of the water entering our homes goes down the drain.")
+        # print("Running the tap while brushing your teeth can waste 4 gallons of water.")
+        # print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
 
 def Lights():
     keys=pygame.key.get_pressed()
@@ -184,7 +184,7 @@ def Lights():
         v = pygame.sprite.Sprite()
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
-        v.rect.topleft = [300,275]
+        v.rect.topleft = [300,230]
         world.blit(v.image, v.rect)
         # print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
         # print("Today’s CFL models have gone through a major makeover. They are smaller, more reasonably priced, save a lot more energy than traditional incandescent bulbs and last longer.")
@@ -200,7 +200,7 @@ def Lights():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 275] # put the ball in the top left corner
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         # print("Compared to traditional incandescents, energy-efficient lightbulbs such as halogen incandescents, compact fluorescent lamps (CFLs), and light emitting diodes (LEDs) have the following advantages: \nTypically use about 25-80 percent less energy than traditional incandescents, saving you money and can last 3-25 times longer.")
@@ -219,7 +219,7 @@ def Recycle():#Pic
         v = pygame.sprite.Sprite()
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
-        v.rect.topleft = [300,275]
+        v.rect.topleft = [300,230]
         world.blit(v.image, v.rect)
         # print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
         # print("Americans use 85,000,000 tons of paper a year; about 680 pounds per person.")
@@ -234,7 +234,7 @@ def Recycle():#Pic
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 275] # put the ball in the top left corner
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
 #         print("Recycled paper produces 73% less air pollution than if it was made from raw materials.")
@@ -252,7 +252,7 @@ def Compost():
         v = pygame.sprite.Sprite()
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
-        v.rect.topleft = [300,275]
+        v.rect.topleft = [300,230]
         world.blit(v.image, v.rect)
         # print("Each year the average American throws away approximately 1,200 lbs of organic waste which includes grass, leaves, tree trimming and food waste that can be composted.")
         # print("70% of the worlds waste can be composted.")
@@ -267,7 +267,7 @@ def Compost():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 275] # put the ball in the top left corner
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         # print("Each year the average American throws away approximately 1,200 lbs of organic waste which includes grass, leaves, tree trimming and food waste that can be composted.")
