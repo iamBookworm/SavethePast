@@ -71,7 +71,7 @@ def ButtonStart(action=None):
         v = pygame.sprite.Sprite()
         v.image = pygame.image.load("vanessathechar.png").convert_alpha()
         v.rect = v.image.get_rect()
-        v.rect.topleft = [500,400]
+        v.rect.topleft = [500,350]
         world.blit(v.image, v.rect)
 def ButtonSelection():
     keys=pygame.key.get_pressed()
