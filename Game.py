@@ -131,7 +131,7 @@ def Water():
         d = pygame.sprite.Sprite() # create sprite
         d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
         d.rect = d.image.get_rect() # use image extent values
-        d.rect.topleft = [300, 400] # put the ball in the top left corner
+        d.rect.topleft = [300, 450] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
         print("Americans now use 127 percent more water than we did in 1950.")
@@ -158,16 +158,6 @@ def Outside():
         v.rect = v.image.get_rect()
         v.rect.topleft = [300,275]
         world.blit(v.image, v.rect)
-<<<<<<< HEAD
-        d = pygame.sprite.Sprite()
-        d.image = pygame.image.load("davethechar.png").convert_alpha()
-        d.rect = d.image.get_rect()
-        d.rect.topleft = [300,450]
-        world.blit(d.image, d.rect)
-        pygame.display.flip()
-
-
-=======
     if keys [pygame.K_b]:
         pygame.display.update()
         pygame.time.wait(10)
@@ -181,20 +171,40 @@ def Outside():
         d.rect.topleft = [300, 230] # put the ball in the top left corner
         world.blit(d.image, d.rect)
         pygame.display.flip()
-<<<<<<< HEAD
->>>>>>> 3e9e6f9407ba711ab530e5a06d5af831d730ead7
-def message_display(text):
-    largeText = pygame.font.Font('freesansbold.ttf',30)
-    TextSurf, TextRect = text_objects(text, largeText)
-    TextRect.center = ((325),(200))
-    world.blit(TextSurf, TextRect)
-=======
+
+def Lights():
+    if keys [pygame.K_l]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('trash.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        v = pygame.sprite.Sprite()
+        v.image = pygame.image.load("vanessathechar.png").convert_alpha()
+        v.rect = v.image.get_rect()
+        v.rect.topleft = [300,275]
+        world.blit(v.image, v.rect)
+    if keys [pygame.K_c]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('trash.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
+        d = pygame.sprite.Sprite() # create sprite
+        d.image = pygame.image.load("300dave.png").convert_alpha() # load ball image
+        d.rect = d.image.get_rect() # use image extent values
+        d.rect.topleft = [300, 230] # put the ball in the top left corner
+        world.blit(d.image, d.rect)
+        pygame.display.flip()
+
 # def message_display(text):
 #     largeText = pygame.font.Font('freesansbold.ttf',30)
 #     TextSurf, TextRect = text_objects(text, largeText)
 #     TextRect.center = ((325),(200))
 #     world.blit(TextSurf, TextRect)
->>>>>>> 240320b6c499a5ee417489d67b035ca4e65e25cc
+
 def game_running():
     running = True
 
