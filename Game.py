@@ -49,6 +49,7 @@ def game_intro():
         Lights()
         Recycle()
         Compost()
+        End()
 def text_objects(text,font):
     textSurface = font.render(text,True,black)
     return textSurface,textSurface.get_rect()
@@ -272,6 +273,15 @@ def Compost():
         print("Each year the average American throws away approximately 1,200 lbs of organic waste which includes grass, leaves, tree trimming and food waste that can be composted.")
         print("70% of the worlds waste can be composted.")
         print("On average it costs $35 per ton to compost waste, $50 per ton to landfill it and up to $75 per ton to incinerate it.")
+def End():
+    keys=pygame.key.get_pressed()
+    if keys [pygame.K_e]:
+        pygame.display.update()
+        pygame.time.wait(10)
+        pygame.display.flip()
+        image = pygame.image.load('finalimage.png').convert()
+        world.blit(image, [0,0])
+        pygame.display.flip()
 # def message_display(text):
 #     largeText = pygame.font.Font('freesansbold.ttf',30)
 #     TextSurf, TextRect = text_objects(text, largeText)
