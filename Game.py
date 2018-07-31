@@ -118,7 +118,7 @@ def Water():
         print("About 95 percent of the water entering our homes goes down the drain.")
         print("Running the tap while brushing your teeth can waste 4 gallons of water.")
         print("Many people in the world exist on 3 gallons of water per day or less. We can use that amount in one flush of the toilet.")
-    if keys [pygame.K_w]:
+    if keys [pygame.K_r]:
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
@@ -141,7 +141,7 @@ def Outside():
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('trash.png').convert()
+        image = pygame.image.load('vanessaled.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         v = pygame.sprite.Sprite()
@@ -157,7 +157,7 @@ def Outside():
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('trash.png').convert()
+        image = pygame.image.load('daveled.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         d = pygame.sprite.Sprite() # create sprite
@@ -177,7 +177,7 @@ def Lights():
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('led.png').convert()
+        image = pygame.image.load('vanessarecycle.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         v = pygame.sprite.Sprite()
@@ -193,7 +193,7 @@ def Lights():
         pygame.display.update()
         pygame.time.wait(10)
         pygame.display.flip()
-        image = pygame.image.load('led.png').convert()
+        image = pygame.image.load('daverecycle.png').convert()
         world.blit(image, [0,0])
         pygame.display.flip()
         d = pygame.sprite.Sprite() # create sprite
